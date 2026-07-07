@@ -1,0 +1,68 @@
+.page {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #000;
+}
+
+.footerTitle {
+  font-family: sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.footerText {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.footerEmail {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.footerFindMe {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
+
+.socialRow {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialLink {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6b7280;
+  border-radius: 9999px;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.socialLink:hover {
+  background-color: #1f2937;
+}

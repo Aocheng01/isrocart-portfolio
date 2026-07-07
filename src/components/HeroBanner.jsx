@@ -1,27 +1,24 @@
 import { siteInfo } from "../data/data.js";
 import Navbar from "./Navbar.jsx";
+import styles from "./HeroBanner.module.css";
 
 export default function HeroBanner() {
   return (
-    <div className="relative w-full h-[180px] md:h-[280px] lg:h-[340px] bg-black overflow-hidden">
+    <div className={styles.banner}>
       {siteInfo.heroImage && (
-        <img
-          src={siteInfo.heroImage}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        <img src={siteInfo.heroImage} alt="" className={styles.image} />
       )}
 
-      <div className="absolute inset-x-0 top-0 z-20">
+      <div className={styles.navWrapper}>
         <Navbar />
       </div>
 
       <svg
-        className="absolute bottom-0 left-0 w-full h-10 md:h-16 z-10"
+        className={styles.wave}
         viewBox="0 0 1440 100"
         preserveAspectRatio="none"
       >
-        <path d="M0,100 Q720,0 1440,100 Z" className="fill-black" />
+        <path d="M0,100 Q720,0 1440,100 Z" className={styles.wavePath} />
       </svg>
     </div>
   );

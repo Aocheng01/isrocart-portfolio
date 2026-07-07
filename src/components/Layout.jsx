@@ -1,29 +1,30 @@
 import { siteInfo } from "../data/data.js";
 import HeroBanner from "./HeroBanner.jsx";
 import SocialIcon from "./SocialIcon.jsx";
+import styles from "./Layout.module.css";
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col">
+    <div className={styles.page}>
       <HeroBanner />
 
-      <main className="flex-1">{children}</main>
+      <main className={styles.main}>{children}</main>
 
-      <footer className="mt-12 px-4 py-8 text-center bg-black">
-        <h4 className="font-sans font-bold uppercase tracking-widest">{siteInfo.name}</h4>
-        <p className="text-gray-400 text-sm mt-1">{siteInfo.role}</p>
-        <a href={`mailto:${siteInfo.email}`} className="text-gray-400 text-sm underline mt-4 inline-block">
+      <footer className={styles.footer}>
+        <h4 className={styles.footerTitle}>{siteInfo.name}</h4>
+        <p className={styles.footerText}>{siteInfo.role}</p>
+        <a href={`mailto:${siteInfo.email}`} className={styles.footerEmail}>
           {siteInfo.email}
         </a>
-        <p className="text-gray-400 text-sm mt-8">find me elsewhere:</p>
-        <div className="flex justify-center gap-4 mt-4">
+        <p className={styles.footerFindMe}>find me elsewhere:</p>
+        <div className={styles.socialRow}>
           {siteInfo.social.map((s) => (
             <a
               key={s.name}
               href={s.url}
               target="_blank"
               rel="noreferrer"
-              className="w-9 h-9 flex items-center justify-center border border-gray-500 rounded-full text-white hover:bg-gray-800"
+              className={styles.socialLink}
             >
               <SocialIcon name={s.name} />
             </a>

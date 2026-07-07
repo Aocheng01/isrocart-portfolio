@@ -4,6 +4,7 @@ import Layout from "../components/Layout.jsx";
 import GridCard from "../components/GridCard.jsx";
 import ImageLightbox from "../components/Lightbox.jsx";
 import { categories } from "../data/data.js";
+import styles from "./CategoryDetail.module.css";
 
 export default function CategoryDetail() {
   const { slug, sectionSlug } = useParams();
@@ -13,7 +14,7 @@ export default function CategoryDetail() {
   if (!category) {
     return (
       <Layout>
-        <p className="text-center py-20 text-gray-400">Categoría no encontrada.</p>
+        <p className={styles.emptyState}>Categoría no encontrada.</p>
       </Layout>
     );
   }
@@ -27,31 +28,31 @@ export default function CategoryDetail() {
 
     return (
       <Layout>
-        <h1 className="font-sans font-bold uppercase tracking-widest text-center text-2xl py-8">
+        <h1 className={styles.title}>
           {section.title}
         </h1>
         {section.groups.map((group) => (
-          <div key={group.title} className="mt-12">
-            <h2 className="font-sans font-bold uppercase tracking-widest text-center text-lg mb-4">
+          <div key={group.title} className={styles.group}>
+            <h2 className={styles.groupTitle}>
               {group.title}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <div className={styles.imageGrid2}>
               {group.images.map((img, i) => (
                 <button
                   key={img}
                   onClick={() => setLightboxIndex(allImages.indexOf(img))}
-                  className="block w-full"
+                  className={styles.imageButton}
                 >
-                  <img src={img} alt={group.title} className="w-full object-cover" />
+                  <img src={img} alt={group.title} className={styles.image} />
                 </button>
               ))}
             </div>
           </div>
         ))}
-        <div className="text-center mt-12 px-4">
+        <div className={styles.backLinkWrapper}>
           <Link
             to={`/category/${slug}`}
-            className="text-sm text-gray-400 underline uppercase tracking-widest"
+            className={styles.backLink}
           >
             Back to {category.title}
           </Link>
@@ -68,12 +69,12 @@ export default function CategoryDetail() {
 
   return (
     <Layout>
-      <h1 className="font-sans font-bold uppercase tracking-widest text-center text-2xl py-8">
+      <h1 className={styles.title}>
         {category.title}
       </h1>
 
       {category.sections.length > 0 && (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
+        <div className={styles.gridCards}>
           {category.sections.map((s) => (
             <GridCard
               key={s.slug}
@@ -86,10 +87,10 @@ export default function CategoryDetail() {
       )}
 
       {category.gallery && category.gallery.length > 0 && (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
+        <div className={styles.gridCards}>
           {category.gallery.map((img, i) => (
-            <button key={img} onClick={() => setLightboxIndex(i)} className="block w-full aspect-square overflow-hidden">
-              <img src={img} alt={category.title} className="w-full h-full object-cover" />
+            <button key={img} onClick={() => setLightboxIndex(i)} className={styles.galleryButton}>
+              <img src={img} alt={category.title} className={styles.galleryImage} />
             </button>
           ))}
         </div>
