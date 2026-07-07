@@ -1,0 +1,54 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: #000;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    height: 340px;
+  }
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navWrapper {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  z-index: 20;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .wave {
+    height: 4rem;
+  }
+}
+
+.wavePath {
+  fill: #000;
+}

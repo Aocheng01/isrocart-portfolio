@@ -1,0 +1,49 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-top:0.5rem;
+}
+
+.aspectSquare {
+  aspect-ratio: 1 / 1;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.205);
+}
+
+.title {
+  font-family: sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
