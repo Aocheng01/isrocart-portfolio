@@ -26,7 +26,7 @@ function buildNavItems() {
     }
   });
 
-  items.push({ label: "About", to: "#" });
+  items.push({ label: "About", to: "/about" });
 
   return items;
 }
@@ -76,65 +76,67 @@ export default function Navbar() {
           <span className={styles.brandRole}>{siteInfo.role}</span>
         </Link>
 
-        <nav className={styles.desktopNav}>
-          {navItems.map((item) => (
-            <div
-              key={item.label}
-              className={styles.navItem}
-              onMouseEnter={() => item.children && setHovered(item.label)}
-              onMouseLeave={() => item.children && setHovered(null)}
-            >
-              <NavLink
-                to={item.to}
-                end={item.to === "/"}
-                className={({ isActive }) =>
-                  `${styles.navLink} ${isActive ? styles.navLinkActive : ""}`
-                }
+        <div className={styles.navGroup}>
+          <nav className={styles.desktopNav}>
+            {navItems.map((item) => (
+              <div
+                key={item.label}
+                className={styles.navItem}
+                onMouseEnter={() => item.children && setHovered(item.label)}
+                onMouseLeave={() => item.children && setHovered(null)}
               >
-                {item.label}
-                {item.children && (
-                  <span className={styles.chevronIndicator}>{hovered === item.label ? "▲" : "▼"}</span>
-                )}
-              </NavLink>
-              <AnimatePresence>
-                {item.children && hovered === item.label && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
-                    transition={{ duration: 0.15 }}
-                    className={styles.dropdown}
-                  >
-                    <div className={styles.dropdownInner}>
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.to + child.label}
-                          to={child.to}
-                          className={styles.dropdownLink}
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          ))}
-        </nav>
+                <NavLink
+                  to={item.to}
+                  end={item.to === "/"}
+                  className={({ isActive }) =>
+                    `${styles.navLink} ${isActive ? styles.navLinkActive : ""}`
+                  }
+                >
+                  {item.label}
+                  {item.children && (
+                    <span className={styles.chevronIndicator}>{hovered === item.label ? "▲" : "▼"}</span>
+                  )}
+                </NavLink>
+                <AnimatePresence>
+                  {item.children && hovered === item.label && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -8 }}
+                      transition={{ duration: 0.15 }}
+                      className={styles.dropdown}
+                    >
+                      <div className={styles.dropdownInner}>
+                        {item.children.map((child) => (
+                          <Link
+                            key={child.to + child.label}
+                            to={child.to}
+                            className={styles.dropdownLink}
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
+          </nav>
 
-        <div className={styles.socialRow}>
-          {siteInfo.social.map((s) => (
-            <a
-              key={s.name}
-              href={s.url}
-              target="_blank"
-              rel="noreferrer"
-              className={styles.socialLink}
-            >
-              <SocialIcon name={s.name} />
-            </a>
-          ))}
+          <div className={styles.socialRow}>
+            {siteInfo.social.map((s) => (
+              <a
+                key={s.name}
+                href={s.url}
+                target="_blank"
+                rel="noreferrer"
+                className={styles.socialLink}
+              >
+                <SocialIcon name={s.name} />
+              </a>
+            ))}
+          </div>
         </div>
 
         <button

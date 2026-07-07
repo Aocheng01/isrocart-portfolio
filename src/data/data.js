@@ -3,8 +3,12 @@ export const siteInfo = {
   role: "Concept Artist & Illustrator",
   email: "isrocart@gmail.com",
   heroImage: "/images/hero.jpg",
+  aboutImage: "/images/about.jpg",
+  aboutText: "Escribe aquí el texto que describe lo que haces.",
   social: [
+    { name: "email", url: "mailto:isrocart@gmail.com" },
     { name: "instagram", url: "https://instagram.com/isrocart" },
+    { name: "therookies", url: "https://www.therookies.co/u/Isroca" },
   ],
 };
 
@@ -12,7 +16,7 @@ export const categories = [
   {
     slug: "concept-art",
     title: "Concept Art",
-    cover: "/images/concept-art/cover.jpg",
+    cover: "/images/concept-art/concept-art-cover.jpg",
     sections: [
       {
         title: "Proyecto 1",
@@ -47,7 +51,7 @@ export const categories = [
   {
     slug: "illustration",
     title: "Illustration",
-    cover: "/images/illustration/cover.jpg",
+    cover: "/images/illustration/illustration-cover.jpg",
     sections: [],
     gallery: [
       "/images/illustration/img-1.jpg",
@@ -59,7 +63,7 @@ export const categories = [
   {
     slug: "3D",
     title: "3D",
-    cover: "/images/3D/cover.jpg",
+    cover: "/images/3D/3D-cover.jpg",
     sections: [],
     gallery: [
       "/images/3D/img-1.jpg",

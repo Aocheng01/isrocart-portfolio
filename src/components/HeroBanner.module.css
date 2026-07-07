@@ -4,6 +4,7 @@
   height: 180px;
   background-color: #000;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {

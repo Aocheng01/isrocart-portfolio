@@ -2,6 +2,7 @@
   position: relative;
   overflow: hidden;
   display: block;
+  margin-top:0.5rem;
 }
 
 .aspectSquare {
@@ -19,26 +20,25 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  transition: opacity 0.2s ease;
+  opacity: 1;
+  transition: background-color 0.3s ease;
 }
 
 .card:hover .overlay {
-  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.205);
 }
 
 .title {
   font-family: sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
   color: #fff;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   padding: 0 0.5rem;
 }
 

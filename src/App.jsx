@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import CategoryDetail from "./pages/CategoryDetail.jsx";
+import About from "./pages/About.jsx";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/category/:slug" element={<CategoryDetail />} />
         <Route path="/category/:slug/:sectionSlug" element={<CategoryDetail />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );
