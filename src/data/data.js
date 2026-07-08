@@ -19,29 +19,37 @@ export const categories = [
     cover: "/images/concept-art/concept-art-cover.jpg",
     sections: [
       {
-        title: "Proyecto 1",
-        slug: "Proyecto 1",
-        cover: "/images/concept-art/Proyecto 1/cover.jpg",
+        title: "Project 1",
+        slug: "Project 1",
+        cover: "/images/concept-art/project-1/concept-art-cover.jpg",
         groups: [
           {
             title: "Characters & Key Art",
             images: [
-              "/images/concept-art/Proyecto 1/characters-1.jpg",
-              "/images/concept-art/Proyecto 1/characters-2.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
             ],
           },
           {
             title: "Props",
             images: [
-              "/images/concept-art/Proyecto 1/props-1.jpg",
-              "/images/concept-art/Proyecto 1/props-2.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
             ],
           },
           {
             title: "Signage",
             images: [
-              "/images/concept-art/Proyecto 1/signage-1.jpg",
-              "/images/concept-art/Proyecto 1/signage-2.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/project-1/characters-1.jpg",
             ],
           },
         ],
@@ -54,10 +62,12 @@ export const categories = [
     cover: "/images/illustration/illustration-cover.jpg",
     sections: [],
     gallery: [
-      "/images/illustration/img-1.jpg",
-      "/images/illustration/img-2.jpg",
-      "/images/illustration/img-3.jpg",
-      "/images/illustration/img-4.jpg",
+      "/images/concept-art/project-1/characters-1.jpg",
+      "/images/concept-art/project-1/characters-1.jpg",
+      "/images/concept-art/project-1/characters-1.jpg",
+      "/images/concept-art/project-1/characters-1.jpg",
+      "/images/concept-art/project-1/characters-1.jpg",
+      "/images/concept-art/project-1/characters-1.jpg",
     ],
   },
   {
@@ -66,8 +76,10 @@ export const categories = [
     cover: "/images/3D/3D-cover.jpg",
     sections: [],
     gallery: [
-      "/images/3D/img-1.jpg",
-      "/images/3D/img-2.jpg",
+      "/images/concept-art/project-1/characters-1.jpg",
+      "/images/concept-art/project-1/characters-1.jpg",
+      "/images/concept-art/project-1/characters-1.jpg",
+      "/images/concept-art/project-1/characters-1.jpg",
     ],
   }
 ];

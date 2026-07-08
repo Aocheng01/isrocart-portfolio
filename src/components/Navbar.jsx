@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { siteInfo, categories } from "../data/data.js";
 import SocialIcon from "./SocialIcon.jsx";
@@ -56,6 +56,7 @@ function CloseIcon() {
 }
 
 export default function Navbar() {
+  const location = useLocation();
   const navItems = buildNavItems();
   const [hovered, setHovered] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -65,6 +66,11 @@ export default function Navbar() {
     setMobileOpen(false);
     setMobileSection(null);
   };
+
+  const isItemActive = (item) =>
+    item.to === "/"
+      ? location.pathname === "/"
+      : location.pathname.startsWith(item.to);
 
   const activeSection = navItems.find((i) => i.label === mobileSection);
 
@@ -184,21 +190,27 @@ export default function Navbar() {
                   >
                     {navItems.map((item) => (
                       <div key={item.label} className={styles.mobileRow}>
-                        <Link
-                          to={item.to}
-                          className={styles.mobileLink}
-                          onClick={closeMobile}
-                        >
-                          {item.label}
-                        </Link>
-                        {item.children && (
+                        {item.children ? (
                           <button
+                            type="button"
                             onClick={() => setMobileSection(item.label)}
-                            aria-label={`Open ${item.label}`}
-                            className={styles.mobileChevronButton}
+                            className={`${styles.mobileLinkButton} ${
+                              isItemActive(item) ? styles.mobileLinkActive : ""
+                            }`}
                           >
+                            {item.label}
                             <ChevronRight />
                           </button>
+                        ) : (
+                          <Link
+                            to={item.to}
+                            className={`${styles.mobileLink} ${
+                              isItemActive(item) ? styles.mobileLinkActive : ""
+                            }`}
+                            onClick={closeMobile}
+                          >
+                            {item.label}
+                          </Link>
                         )}
                       </div>
                     ))}

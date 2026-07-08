@@ -11,6 +11,14 @@
   padding: 1.5rem clamp(1.5rem, 6vw, 12.5rem) 0.5rem;
 }
 
+@media (max-width: 767px) {
+  .topRow {
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .navGroup {
   display: flex;
   align-items: center;
@@ -198,7 +206,8 @@
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.05em;
-  font-size: 1.25rem;
+  font-size: 1.6rem;
+  margin: 0;
 }
 
 .mobileBrandRole {
@@ -206,7 +215,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #9ca3af;
-  margin-top: 0.25rem;
+  margin: 0;
 }
 
 .mobileBody {
@@ -214,29 +223,41 @@
   overflow-y: auto;
   padding: 0 1.5rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mobilePanel {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 2rem;
 }
 
 .mobileRow {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .mobileLink {
-  font-size: 1.5rem;
-  text-decoration: underline;
+  font-size: 1.75rem;
+  font-weight: 700;
   text-underline-offset: 4px;
 }
 
-.mobileChevronButton {
-  color: #9ca3af;
+.mobileLinkButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-underline-offset: 4px;
+}
+
+.mobileLinkActive {
+  text-decoration: underline;
 }
 
 .mobileBackButton {
@@ -259,15 +280,15 @@
 }
 
 .iconChevron {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.75rem;
+  height: 1.75rem;
   stroke: currentColor;
   fill: none;
 }
 
 .iconClose {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   stroke: currentColor;
   fill: none;
 }

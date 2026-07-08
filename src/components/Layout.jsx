@@ -3,10 +3,10 @@ import HeroBanner from "./HeroBanner.jsx";
 import SocialIcon from "./SocialIcon.jsx";
 import styles from "./Layout.module.css";
 
-export default function Layout({ children }) {
+export default function Layout({ children, title }) {
   return (
     <div className={styles.page}>
-      <HeroBanner />
+      <HeroBanner title={title} />
 
       <main className={styles.main}>{children}</main>
 
@@ -16,7 +16,7 @@ export default function Layout({ children }) {
         <a href={`mailto:${siteInfo.email}`} className={styles.footerEmail}>
           {siteInfo.email}
         </a>
-        <p className={styles.footerFindMe}>find me elsewhere:</p>
+        <p className={styles.footerFindMe}>Find me elsewhere:</p>
         <div className={styles.socialRow}>
           {siteInfo.social.map((s) => (
             <a

@@ -27,10 +27,7 @@ export default function CategoryDetail() {
     const allImages = section.groups.flatMap((g) => g.images);
 
     return (
-      <Layout>
-        <h1 className={styles.title}>
-          {section.title}
-        </h1>
+      <Layout title={section.title}>
         {section.groups.map((group) => (
           <div key={group.title} className={styles.group}>
             <h2 className={styles.groupTitle}>
@@ -68,11 +65,7 @@ export default function CategoryDetail() {
   }
 
   return (
-    <Layout>
-      <h1 className={styles.title}>
-        {category.title}
-      </h1>
-
+    <Layout title={category.title}>
       {category.sections.length > 0 && (
         <div className={styles.gridCards}>
           {category.sections.map((s) => (
