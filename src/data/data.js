@@ -4,7 +4,7 @@ export const siteInfo = {
   email: "isrocart@gmail.com",
   heroImage: "/images/hero.jpg",
   aboutImage: "/images/about.jpg",
-  aboutText: "Escribe aquí el texto que describe lo que haces.",
+  aboutText: "I don't know yet.",
   social: [
     { name: "email", url: "mailto:isrocart@gmail.com" },
     { name: "instagram", url: "https://instagram.com/isrocart" },
