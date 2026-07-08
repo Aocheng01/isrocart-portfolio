@@ -73,6 +73,9 @@ export default function CategoryDetail() {
               key={s.slug}
               title={s.title}
               image={s.cover}
+              imagePosition={s.coverPosition}
+              imageZoom={s.coverZoom}
+              imageOffsetY={s.coverOffsetY}
               to={`/category/${slug}/${s.slug}`}
             />
           ))}

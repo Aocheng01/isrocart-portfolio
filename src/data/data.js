@@ -17,11 +17,15 @@ export const categories = [
     slug: "concept-art",
     title: "Concept Art",
     cover: "/images/concept-art/concept-art-cover.jpg",
+    coverPosition: "100% center",
     sections: [
       {
-        title: "Project 1",
-        slug: "Project 1",
-        cover: "/images/concept-art/project-1/concept-art-cover.jpg",
+        title: "Echoes of Zul'Asha",
+        slug: "Echoes of Zul'Asha",
+        cover: "/images/concept-art/echoes-of-zul'asha/echoes-of-zul'asha-cover.png",
+        coverPosition: "75%",
+        coverZoom: 1.05,
+        coverOffsetY: 0,
         groups: [
           {
             title: "Characters & Key Art",

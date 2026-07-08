@@ -12,6 +12,7 @@ export default function Home() {
             key={cat.slug}
             title={cat.title}
             image={cat.cover}
+            imagePosition={cat.coverPosition}
             to={`/category/${cat.slug}`}
           />
         ))}

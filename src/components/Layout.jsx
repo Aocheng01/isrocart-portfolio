@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { siteInfo } from "../data/data.js";
 import HeroBanner from "./HeroBanner.jsx";
 import SocialIcon from "./SocialIcon.jsx";
@@ -5,7 +6,13 @@ import styles from "./Layout.module.css";
 
 export default function Layout({ children, title }) {
   return (
-    <div className={styles.page}>
+    <motion.div
+      className={styles.page}
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -12 }}
+      transition={{ duration: 0.15, ease: "easeOut" }}
+    >
       <HeroBanner title={title} />
 
       <main className={styles.main}>{children}</main>
@@ -31,6 +38,6 @@ export default function Layout({ children, title }) {
           ))}
         </div>
       </footer>
-    </div>
+    </motion.div>
   );
 }
