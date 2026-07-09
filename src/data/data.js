@@ -37,8 +37,6 @@ export const categories = [
             ],
           },
           {
-
-            title: "Characters Concept ",
             images: [
               "/images/concept-art/echoes-of-zul'asha/2.png",
               "/images/concept-art/echoes-of-zul'asha/3.png",
@@ -47,7 +45,6 @@ export const categories = [
             ],
           },
           {
-            title: "Props",
             images: [
               "/images/concept-art/echoes-of-zul'asha/6.png",
               "/images/concept-art/echoes-of-zul'asha/7.png",
@@ -55,7 +52,6 @@ export const categories = [
             ],
           },
           {
-            title: "Creatures",
             images: [
               "/images/concept-art/echoes-of-zul'asha/9.png",
               "/images/concept-art/echoes-of-zul'asha/10.png",
@@ -63,7 +59,6 @@ export const categories = [
             ],
           },
           {
-            title: "Work in progress",
             images: [
               "/images/concept-art/echoes-of-zul'asha/12.png",
               "/images/concept-art/echoes-of-zul'asha/13.png",
