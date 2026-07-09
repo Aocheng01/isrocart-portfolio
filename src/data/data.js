@@ -1,6 +1,6 @@
 export const siteInfo = {
   name: "Isabel Rodríguez Caro",
-  role: "Concept Artist & Illustrator",
+  role: "Concept Artist / Illustrator / 3D Artist",
   email: "isrocart@gmail.com",
   heroImage: "/images/hero.jpg",
   aboutImage: "/images/about.jpg",
