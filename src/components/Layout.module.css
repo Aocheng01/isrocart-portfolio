@@ -11,7 +11,7 @@
 }
 
 .footer {
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 2rem 1rem;
   text-align: center;
   background-color: #000;
@@ -27,7 +27,7 @@
 .footerText {
   color: #9ca3af;
   font-size: 0.875rem;
-  margin-top: 0.25rem;
+  margin-top: 0rem;
 }
 
 .footerEmail {

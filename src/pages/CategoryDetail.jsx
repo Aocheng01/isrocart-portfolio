@@ -67,7 +67,7 @@ export default function CategoryDetail() {
   return (
     <Layout title={category.title}>
       {category.sections.length > 0 && (
-        <div className={styles.gridCards}>
+        <div className={styles.sectionsGrid}>
           {category.sections.map((s) => (
             <GridCard
               key={s.slug}
@@ -76,6 +76,9 @@ export default function CategoryDetail() {
               imagePosition={s.coverPosition}
               imageZoom={s.coverZoom}
               imageOffsetY={s.coverOffsetY}
+              imageOpacity={s.coverOpacity}
+              imageBrightness={s.coverBrightness}
+              titleFontSize={s.titleFontSize}
               to={`/category/${slug}/${s.slug}`}
             />
           ))}

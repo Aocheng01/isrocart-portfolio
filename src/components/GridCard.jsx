@@ -9,12 +9,17 @@ export default function GridCard({
   imagePosition,
   imageZoom = 1,
   imageOffsetY = 0,
+  imageOpacity,
+  imageBrightness = 1,
+  titleFontSize,
 }) {
   const imageStyle = {
     ...(imagePosition ? { objectPosition: imagePosition } : {}),
     ...(imageZoom !== 1 || imageOffsetY !== 0
       ? { transform: `scale(${imageZoom}) translateY(${imageOffsetY}%)` }
       : {}),
+    ...(imageOpacity !== undefined ? { opacity: imageOpacity } : {}),
+    ...(imageBrightness !== 1 ? { filter: `brightness(${imageBrightness})` } : {}),
   };
 
   return (
@@ -30,7 +35,12 @@ export default function GridCard({
         loading="lazy"
       />
       <div className={styles.overlay}>
-        <h3 className={styles.title}>{title}</h3>
+        <h3
+          className={styles.title}
+          style={titleFontSize ? { fontSize: titleFontSize } : undefined}
+        >
+          {title}
+        </h3>
       </div>
     </Link>
   );

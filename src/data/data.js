@@ -16,8 +16,10 @@ export const categories = [
   {
     slug: "concept-art",
     title: "Concept Art",
-    cover: "/images/concept-art/concept-art-cover.jpg",
-    coverPosition: "100% center",
+    cover: "/images/concept-art/concept-art-cover.png",
+    coverPosition: "75% center",
+    coverOpacity: 1,
+    coverBrightness: 1.5,
     sections: [
       {
         title: "Echoes of Zul'Asha",
@@ -26,34 +28,46 @@ export const categories = [
         coverPosition: "75%",
         coverZoom: 1.05,
         coverOffsetY: 0,
+        coverOpacity: 1,
+      coverBrightness: 1.3,
         groups: [
           {
-            title: "Characters & Key Art",
             images: [
-              "/images/concept-art/project-1/characters-1.jpg",
-              "/images/concept-art/project-1/characters-1.jpg",
-              "/images/concept-art/project-1/characters-1.jpg",
-              "/images/concept-art/project-1/characters-1.jpg",
-              "/images/concept-art/project-1/characters-1.jpg",
-              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/echoes-of-zul'asha/1.png",
+            ],
+          },
+          {
+
+            title: "Characters Concept ",
+            images: [
+              "/images/concept-art/echoes-of-zul'asha/2.png",
+              "/images/concept-art/echoes-of-zul'asha/3.png",
+              "/images/concept-art/echoes-of-zul'asha/4.png",
+              "/images/concept-art/echoes-of-zul'asha/5.png",
             ],
           },
           {
             title: "Props",
             images: [
-              "/images/concept-art/project-1/characters-1.jpg",
-              "/images/concept-art/project-1/characters-1.jpg",
-              "/images/concept-art/project-1/characters-1.jpg",
-              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/echoes-of-zul'asha/6.png",
+              "/images/concept-art/echoes-of-zul'asha/7.png",
+              "/images/concept-art/echoes-of-zul'asha/8.png",
             ],
           },
           {
-            title: "Signage",
+            title: "Creatures",
             images: [
-              "/images/concept-art/project-1/characters-1.jpg",
-              "/images/concept-art/project-1/characters-1.jpg",
-              "/images/concept-art/project-1/characters-1.jpg",
-              "/images/concept-art/project-1/characters-1.jpg",
+              "/images/concept-art/echoes-of-zul'asha/9.png",
+              "/images/concept-art/echoes-of-zul'asha/10.png",
+              "/images/concept-art/echoes-of-zul'asha/11.png",
+            ],
+          },
+          {
+            title: "Work in progress",
+            images: [
+              "/images/concept-art/echoes-of-zul'asha/12.png",
+              "/images/concept-art/echoes-of-zul'asha/13.png",
+              "/images/concept-art/echoes-of-zul'asha/14.png",
             ],
           },
         ],
@@ -66,24 +80,94 @@ export const categories = [
     cover: "/images/illustration/illustration-cover.jpg",
     sections: [],
     gallery: [
-      "/images/concept-art/project-1/characters-1.jpg",
-      "/images/concept-art/project-1/characters-1.jpg",
-      "/images/concept-art/project-1/characters-1.jpg",
-      "/images/concept-art/project-1/characters-1.jpg",
-      "/images/concept-art/project-1/characters-1.jpg",
-      "/images/concept-art/project-1/characters-1.jpg",
+      "/images/illustration/1.png",
+      "/images/illustration/2.png",
+      "/images/illustration/3.png",
+      "/images/illustration/4.png",
+      "/images/illustration/5.png",
+      "/images/illustration/6.png",
     ],
   },
   {
     slug: "3D",
     title: "3D",
     cover: "/images/3D/3D-cover.jpg",
-    sections: [],
-    gallery: [
-      "/images/concept-art/project-1/characters-1.jpg",
-      "/images/concept-art/project-1/characters-1.jpg",
-      "/images/concept-art/project-1/characters-1.jpg",
-      "/images/concept-art/project-1/characters-1.jpg",
+    coverBrightness: 1.1,
+    sections: [
+      {
+        title: "Cat",
+        slug: "cat",
+        cover: "/images/3D/cat/cat-cover.png",
+        coverPosition: "75%",
+        coverZoom: 1.05,
+        coverOffsetY: 0,
+        coverOpacity: 1,
+        coverBrightness: 1,
+        groups: [
+          {
+            images: [
+              "/images/3D/cat/1.png",
+              "/images/3D/cat/2.png",
+              "/images/3D/cat/3.png",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Woman",
+        slug: "woman",
+        cover: "/images/3D/woman/woman-cover.png",
+        coverPosition: "75%",
+        coverZoom: 1.05,
+        coverOffsetY: 0,
+        coverOpacity: 1,
+        coverBrightness: 1,
+        groups: [
+          {
+            images: [
+              "/images/3D/woman/1.png",
+              "/images/3D/woman/2.png",
+              "/images/3D/woman/3.png",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Sword",
+        slug: "sword",
+        cover: "/images/3D/sword/sword-cover.png",
+        coverPosition: "50%",
+        coverZoom: 1.1,
+        coverOffsetY: 0,
+        coverOpacity: 1,
+        coverBrightness: 1,
+        groups: [
+          {
+            images: [
+              "/images/3D/sword/1.png",
+              "/images/3D/sword/2.png",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Roocking chair",
+        slug: "roocking-chair",
+        cover: "/images/3D/roocking-chair/1.png",
+        coverPosition: "60%",
+        coverZoom: 1.05,
+        coverOffsetY: 0,
+        coverOpacity: 1,
+        coverBrightness: 1,
+        groups: [
+          {
+            images: [
+              "/images/3D/roocking-chair/1.png",
+            ],
+          },
+        ],
+      }
     ],
+
   }
 ];

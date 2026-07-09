@@ -31,12 +31,13 @@
 .imageGrid2 {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .imageGrid2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 }
 
@@ -78,15 +79,38 @@
 
 @media (min-width: 1024px) {
   .gridCards {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.sectionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .sectionsGrid {
+    grid-template-columns: repeat(3, minmax(0, 320px));
   }
 }
 
 .galleryButton {
   display: block;
-  width: 100%;
+  width: 90%;
+  height: 90%;
+  margin: auto auto;
   aspect-ratio: 1 / 1;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .galleryButton {
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem;
+  }
 }
 
 .galleryImage {

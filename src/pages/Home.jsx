@@ -13,6 +13,8 @@ export default function Home() {
             title={cat.title}
             image={cat.cover}
             imagePosition={cat.coverPosition}
+            imageOpacity={cat.coverOpacity}
+            imageBrightness={cat.coverBrightness}
             to={`/category/${cat.slug}`}
           />
         ))}
