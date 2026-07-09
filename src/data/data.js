@@ -95,7 +95,7 @@ export const categories = [
     coverBrightness: 1.1,
     sections: [
       {
-        title: "Cat",
+        title: "",
         slug: "cat",
         cover: "/images/3D/cat/cat-cover.png",
         coverPosition: "75%",
@@ -114,7 +114,7 @@ export const categories = [
         ],
       },
       {
-        title: "Woman",
+        title: "",
         slug: "woman",
         cover: "/images/3D/woman/woman-cover.png",
         coverPosition: "75%",
@@ -128,12 +128,14 @@ export const categories = [
               "/images/3D/woman/1.png",
               "/images/3D/woman/2.png",
               "/images/3D/woman/3.png",
+              "/images/3D/woman/4.png",
+              "/images/3D/woman/5.png",
             ],
           },
         ],
       },
       {
-        title: "Sword",
+        title: "",
         slug: "sword",
         cover: "/images/3D/sword/sword-cover.png",
         coverPosition: "50%",
@@ -151,7 +153,7 @@ export const categories = [
         ],
       },
       {
-        title: "Roocking chair",
+        title: "",
         slug: "roocking-chair",
         cover: "/images/3D/roocking-chair/1.png",
         coverPosition: "60%",
