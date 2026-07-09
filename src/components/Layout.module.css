@@ -1,6 +1,6 @@
 .page {
   min-height: 100vh;
-  background-color: #000;
+  background-color: #131212;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
   margin-top: 2rem;
   padding: 2rem 1rem;
   text-align: center;
-  background-color: #000;
+  background-color: #131212;
 }
 
 .footerTitle {
