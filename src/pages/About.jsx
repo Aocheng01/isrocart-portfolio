@@ -12,8 +12,14 @@ export default function About() {
           className={styles.photo}
         />
         <div className={styles.textBlock}>
-          <h1 className={styles.title}>About</h1>
+          <h1 className={styles.title}>About me</h1>
           <p className={styles.text}>{siteInfo.aboutText}</p>
+          <p className={styles.text}>
+            Contact:{" "}
+            <a href={`mailto:${siteInfo.email}`} className={styles.emailLink}>
+              {siteInfo.email}
+            </a>
+          </p>
         </div>
       </div>
     </Layout>

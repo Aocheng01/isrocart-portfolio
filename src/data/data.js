@@ -4,7 +4,7 @@ export const siteInfo = {
   email: "isrocart@gmail.com",
   heroImage: "/images/hero.jpg",
   aboutImage: "/images/about.jpg",
-  aboutText: "I don't know yet.",
+  aboutText: "Hi, I'm Isa!\nI'm a Junior Concept Artist and Illustrator specializing in creature and character design for video games and animation. I love worldbuilding and creating expressive, story-driven designs, combining 2D art with 3D modeling to build efficient assets for production pipelines.\n\nTools: Clip Studio Paint, Photoshop, Blender, Nomad Sculpt, Substance Painter.\n\nI'm eager to join a team and currently open for freelance or full-time opportunities!",
   social: [
     { name: "email", url: "mailto:isrocart@gmail.com" },
     { name: "instagram", url: "https://instagram.com/isrocart" },

@@ -26,7 +26,7 @@ function buildNavItems() {
     }
   });
 
-  items.push({ label: "About", to: "/about" });
+  items.push({ label: "About me", to: "/about" });
 
   return items;
 }

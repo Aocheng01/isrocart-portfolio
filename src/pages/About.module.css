@@ -57,3 +57,8 @@
   color: #d1d5db;
   white-space: pre-line;
 }
+
+.emailLink {
+  color: #009220;
+  text-decoration: underline;
+}
