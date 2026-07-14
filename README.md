@@ -1,16 +1,59 @@
-# React + Vite
+# 🎨 isrocart-portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Portfolio profesional de concept art para **[@isrocart](https://github.com/isrocart)**. Una web pensada para exhibir ilustraciones y proyectos de diseño con una experiencia de visualización premium: layout en grid limpio y navegación de imágenes fluida.
 
-Currently, two official plugins are available:
+🌐 **Demo en vivo:** [www.isrocart.com](https://www.isrocart.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<!-- Captura de la home -->
+![Home del portfolio](ruta/a/tu/captura-home.png)
 
-## React Compiler
+<!-- Captura de la galería / vista de detalle -->
+![Vista de detalle de una obra](ruta/a/tu/captura-detalle.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Características
 
-## Expanding the Oxlint configuration
+- Layout en grid responsive para mostrar las obras
+- Navegación fluida entre imágenes
+- Diseño limpio orientado a la experiencia de visualización
+- Rendimiento optimizado gracias a Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Stack Tecnológico
+
+<p>
+<a href="#"><img alt="React" src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black"></a>
+<a href="#"><img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white"></a>
+<a href="#"><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black"></a>
+<a href="#"><img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white"></a>
+<a href="#"><img alt="Vercel" src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white"></a>
+</p>
+
+- **React** + **JSX** para la construcción de la interfaz por componentes
+- **Vite** como bundler y entorno de desarrollo
+- **CSS** para el diseño del grid y la maquetación responsive
+- **Vercel** para el despliegue, con dominio propio (`www.isrocart.com`)
+
+## 🚀 Instalación local
+
+```bash
+# Clona el repositorio
+git clone https://github.com/Aocheng01/isrocart-portfolio.git
+
+# Entra en la carpeta del proyecto
+cd isrocart-portfolio
+
+# Instala las dependencias
+npm install
+
+# Levanta el servidor de desarrollo
+npm run dev
+```
+
+## 📦 Build de producción
+
+```bash
+npm run build
+```
+
+## 📄 Licencia
+
+Este proyecto fue desarrollado a medida para [@isrocart](https://github.com/isrocart).
